@@ -49,8 +49,8 @@ HEREDOC
   end
 
   def update(args)
-    system('cd /usr/local/dev-env && git fetch && git reset --hard origin/master')
-    system('ansible-playbook /usr/local/dev-env/ansible/mac.yml -i 127.0.0.1, --ask-become-pass --verbose')
+    system('cd ~/Documents/dev-env && git fetch && git reset --hard origin/master')
+    system('ansible-playbook ~/Documents/dev-env/ansible/mac.yml -i ~/Documents/dev-env/hosts --ask-become-pass --verbose')
   end
 
 end

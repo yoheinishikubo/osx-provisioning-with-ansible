@@ -1,18 +1,19 @@
 # osx provisioning playbook
- 
+
 Inspired by https://github.com/mawatari/mac-provisioning
- 
+
 ## Usage
- 
+
 ```
 $ git clone this_repo
 $ cd this_repo
 $ ansible-playbook -i hosts osx.yml
 ```
- 
+
 ## Usage with dotfiles and ssh role（for me）
 
 ```
+$ bash <(curl -fsSL https://raw.githubusercontent.com/yoheinishikubo/osx-provisioning-with-ansible/master/bin/bootstrap)
 $ git clone this_repo
 $ cd this_repo
 $ vi osx.yml
