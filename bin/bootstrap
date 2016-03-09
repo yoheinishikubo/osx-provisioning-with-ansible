@@ -83,7 +83,7 @@ if [[ $? != 0 ]] ; then
 else
     gcloud components update
 fi
-exec $SHELL -l
+source ~/.bash_profile
 gcloud components install app-engine-python
 echo -e "\n\n"
 
@@ -95,9 +95,9 @@ if [[ $? != 0 ]] ; then
 else
     nodebrew selfupdate
 fi
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 nodebrew install-binary stable
 nodebrew use stable
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
-exec $SHELL -l
 echo -e "\n\n"
