@@ -67,10 +67,32 @@ fi
 echo -e "\n\n"
 
 ## Check out a copy of this repo (first time only) ##
-echo 'Checking out Dash repo...'
+echo 'Checking out Mac OS X Provisioning repo...'
 git clone https://github.com/yoheinishikubo/osx-provisioning-with-ansible.git /usr/local/dev-env 2>/dev/null
 
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
 echo -e "\n\n"
 /usr/local/dev-env/bin/dev update
+
+## Install or Update Google Cloud SDK ##
+echo 'Installing or Updating Google Cloud SDK...'
+which -s gcloud
+if [[ $? != 0 ]] ; then
+    curl https://sdk.cloud.google.com | bash
+else
+    gcloud components update
+fi
+echo -e "\n\n"
+
+## Install or Update Node.js ##
+echo 'Installing or Node.js...'
+which -s nodebrew
+if [[ $? != 0 ]] ; then
+    curl -L git.io/nodebrew | perl - setup
+else
+    nodebrew selfupdate
+fi
+nodebrew install-binary stable
+nodebrew use stable
+echo -e "\n\n"
