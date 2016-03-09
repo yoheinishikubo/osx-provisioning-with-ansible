@@ -97,7 +97,7 @@ else
 fi
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
 source ~/.bash_profile
-# export PATH=$HOME/.nodebrew/current/bin:$PATH
 nodebrew install-binary stable
 nodebrew use stable
+exec -l $SHELL
 echo -e "\n\n"
