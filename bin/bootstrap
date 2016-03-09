@@ -83,6 +83,7 @@ if [[ $? != 0 ]] ; then
 else
     gcloud components update
 fi
+gcloud components install app-engine-python
 echo -e "\n\n"
 
 ## Install or Update Node.js ##
