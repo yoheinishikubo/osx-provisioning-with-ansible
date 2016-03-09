@@ -94,6 +94,7 @@ if [[ $? != 0 ]] ; then
 else
     nodebrew selfupdate
 fi
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
 exec $SHELL -l
 nodebrew install-binary stable
