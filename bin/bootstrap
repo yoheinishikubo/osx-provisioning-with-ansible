@@ -68,8 +68,7 @@ echo -e "\n\n"
 
 ## Check out a copy of this repo (first time only) ##
 echo 'Checking out Mac OS X Provisioning repo...'
-git clone https://github.com/yoheinishikubo/osx-provisioning-with-ansible.git /usr/local/dev-env 2>/dev/null
-git branch fat 2>/dev/null
+git clone -b fat https://github.com/yoheinishikubo/osx-provisioning-with-ansible.git /usr/local/dev-env 2>/dev/null
 
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
