@@ -8,7 +8,7 @@ Forked from https://github.com/shin1x1/osx-provisioning-with-ansible
 Copy the following text and paste it in Terminal and press return.
 
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/yoheinishikubo/osx-provisioning-with-ansible/fat/bin/bootstrap)
+bash <(curl -fsSL https://raw.githubusercontent.com/yoheinishikubo/osx-provisioning-with-ansible/master/bin/bootstrap)
 ```
 
 ## Licence
