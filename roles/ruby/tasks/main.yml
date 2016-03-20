@@ -1,5 +1,5 @@
 ---
-- name: Register installed Ruby
+- name: Check installed Ruby
   shell: rbenv versions | grep $(rbenv install -l | grep -v - | tail -1)
   changed_when: False
   failed_when: False

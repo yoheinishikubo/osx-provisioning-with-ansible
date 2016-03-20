@@ -1,7 +1,4 @@
 ---
-homebrew_repositories:
-  - homebrew/php
-
 homebrew_packages:
   - readline
   - zsh

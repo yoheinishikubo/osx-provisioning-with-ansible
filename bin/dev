@@ -14,21 +14,7 @@ Options:
   -v, --version             Print version and exit
 
 Commands:
-  build              Build or rebuild services
-  help               Get help on a command
-  kill               Kill containers
-  logs               View output from containers
-  ps                 List containers
-  pull               Pulls service images
-  restart            Restart services
-  rm                 Remove stopped containers
-  run                Run a one-off command
-  start              Start services
-  stop               Stop services
-  up                 Create and start containers
-  machine            Manage the virtual machine
-  update             Update Dash developer environment
-  dash               Manage Dash services (nginx and dnsmasq)
+  update             Update developer environment
 
 HEREDOC
 
