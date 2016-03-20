@@ -16,6 +16,18 @@
 
 - name: Install gems
   shell: rbenv exec gem install {{ item }}
-  with_items: ruby_install_gems
+  with_items: '{{ruby_install_gems}}'
   tags:
     - ruby
+
+- name: Add Path to .bash_profile
+  lineinfile:
+    dest: ~/.bash_profile
+    regexp: 'PATH=.*~/.rbenv/bin'
+    line: 'export PATH="~/.rbenv/bin/:$PATH"'
+
+- name: Add rbenv init to .bash_profile
+  lineinfile:
+    dest: ~/.bash_profile
+    regexp: 'rbenv init'
+    line: 'eval "$(rbenv init -)"'
