@@ -1,20 +1,14 @@
 ---
+homebrew_repositories:
+  - homebrew/php
+
 homebrew_packages:
-  - readline
-  - zsh
-  - autojump
   - git
-  - ctags
-  - tmux
   - tig
   - ansible
   - wget
   - curl
   - jq
-  - vim
-  - reattach-to-user-namespace
-  - postgresql
-  - mysql
   - sqlite
   - rbenv
   - ruby-build
@@ -22,43 +16,9 @@ homebrew_packages:
   - go
   - hg
   - awscli
-  - npm
-  - graphviz
-  - tree
-  - heroku-toolbelt
+
 
 homebrew_cask_packages:
   - java
-  - dash
-  - phpstorm
-  - pycharm-ce
-  - iterm2
-  - google-chrome
-  - firefox
-  - virtualbox
-  - vagrant
-  - kobito
-  - dropbox
-  - evernote
-  - skitch
-  - slack
   - github-desktop
-  - sequel-pro
-  - openoffice
-  - bettertouchtool
-  - the-unarchiver
-  - coteditor
-  - istat-menus
-  - bartender
-  - skype
-  - xmind
-  - hipchat
   - atom
-  - livereload
-  - chefdk
-  - clipy
-  - marked
-  - flash
-  - kindle
-  - adobe-reader
-  - licecap
