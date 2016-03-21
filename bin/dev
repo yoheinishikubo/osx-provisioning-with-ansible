@@ -36,8 +36,9 @@ HEREDOC
 
   def update(args)
     system('cd /usr/local/dev-env && git fetch && git reset --hard origin/fat')
-    system('ansible-playbook /usr/local/dev-env/osx.yml -i /usr/local/dev-env/hosts --ask-become-pass --verbose')  end
+    system('ansible-playbook /usr/local/dev-env/osx.yml -i /usr/local/dev-env/hosts --ask-become-pass --verbose')
     system('source ~/.bash_profile')
+   end
 end
 
 DevTool.new(ARGV) if __FILE__==$0

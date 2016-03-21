@@ -2,6 +2,11 @@
 - name: Update Homebrew
   homebrew: update_homebrew=yes
 
+- name: Tap external Homebrew repositories
+  homebrew_tap: tap={{ item }} state=present
+  with_items: '{{homebrew_repositories}}'
+  when: homebrew_repositories
+
 - name: Install/Upgrade Homebrew packages
   homebrew:
     name={{ item.name | default(item) }}
