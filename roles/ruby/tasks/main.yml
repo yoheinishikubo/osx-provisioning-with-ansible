@@ -25,9 +25,11 @@
     dest: ~/.bash_profile
     regexp: 'PATH=.*~/.rbenv/bin'
     line: 'export PATH="~/.rbenv/bin/:$PATH"'
+    create: yes
 
 - name: Add rbenv init to .bash_profile
   lineinfile:
     dest: ~/.bash_profile
     regexp: 'rbenv init'
     line: 'eval "$(rbenv init -)"'
+    create: yes
