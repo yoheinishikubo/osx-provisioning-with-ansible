@@ -99,7 +99,6 @@ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
 source ~/.bash_profile
 nodebrew install-binary stable
 nodebrew use stable
-exec -l $SHELL
 
 ## Install or Update Python3 ##
 echo 'Installing or Python3...'
