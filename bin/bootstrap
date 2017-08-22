@@ -81,7 +81,7 @@ which -s gcloud
 if [[ $? != 0 ]] ; then
     curl https://sdk.cloud.google.com | bash
 else
-    gcloud components update
+    gcloud components update --quiet
 fi
 source ~/.bash_profile
 gcloud components install app-engine-python
