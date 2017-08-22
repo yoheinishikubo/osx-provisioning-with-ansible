@@ -87,8 +87,8 @@ source ~/.bash_profile
 gcloud components install app-engine-python
 echo -e "\n\n"
 
-## Install or Update Python3 ##
-echo 'Installing or Python3...'
+## Install or Updating Python3 ##
+echo 'Installing or Updating Python3...'
 brew install pyenv
 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
@@ -100,7 +100,7 @@ exec -l $SHELL
 echo -e "\n\n"
 
 ## Install or Update Node.js ##
-echo 'Installing or Node.js...'
+echo 'Installing or Updating Node.js...'
 which -s nodebrew
 if [[ $? != 0 ]] ; then
     curl -L git.io/nodebrew | perl - setup
