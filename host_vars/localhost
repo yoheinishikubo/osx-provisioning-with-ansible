@@ -23,7 +23,7 @@ homebrew_packages:
 homebrew_cask_packages:
   - java
   - android-studio
-  - visual-studio-conde
+  - visual-studio-code
   - google-chrome
   - google-japanese-ime
   
