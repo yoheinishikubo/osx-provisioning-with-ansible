@@ -13,9 +13,18 @@ homebrew_packages:
   - go
   - hg
   - awscli
+  - docker-machine
+  - nkf
+  - libjpeg
+  - libpng
+  - libxml2
+  - openssl
+  - android
 
 
 homebrew_cask_packages:
   - java
-  - github-desktop
-  - atom
+  - android-studio
+  - visual-studio-conde
+  - google-chrome
+  
