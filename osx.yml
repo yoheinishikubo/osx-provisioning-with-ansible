@@ -5,6 +5,6 @@
   environment:
     HOMEBREW_CASK_OPTS: "--appdir=/Applications"
   roles:
-    - ruby
     - homebrew
     - homebrew-cask
+    - ruby
