@@ -73,7 +73,7 @@ sudo git clone https://github.com/yoheinishikubo/osx-provisioning-with-ansible.g
 ## Run Ansible Playbook ##
 echo 'Handing Playbook to Ansible (will require your sudo password)...'
 echo -e "\n\n"
-sudo /usr/local/dev-env/bin/dev update
+/usr/local/dev-env/bin/dev update
 
 ## Install or Update Google Cloud SDK ##
 echo 'Installing or Updating Google Cloud SDK...'
