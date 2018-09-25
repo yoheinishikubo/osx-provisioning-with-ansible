@@ -7,7 +7,7 @@
 
 - name: Install Ruby
   shell: rbenv install $(rbenv install -l | grep -v - | tail -1)
-  when: ruby_status is true
+  when: ruby_status
 
 - name: Register global Ruby version
   shell: rbenv global $(rbenv install -l | grep -v - | tail -1)
