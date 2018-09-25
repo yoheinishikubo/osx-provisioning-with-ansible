@@ -35,8 +35,8 @@ HEREDOC
   end
 
   def update(args)
-    system('cd /usr/local/dev-env && sudo git fetch && sudo git reset --hard origin/master')
-    system('ansible-playbook /usr/local/dev-env/osx.yml -i /usr/local/dev-env/hosts --ask-become-pass --verbose')  end
+    system('cd $HOME/Downloads/dev-env && git fetch && git reset --hard origin/master')
+    system('ansible-playbook $HOME/Downloads/dev-env/osx.yml -i $HOME/Downloads/dev-env/hosts --ask-become-pass --verbose')  end
     system('source ~/.bash_profile')
 end
 
