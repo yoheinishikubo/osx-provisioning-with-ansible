@@ -1,8 +1,6 @@
 ---
 homebrew_packages:
   - git
-  - tig
-  - ansible
   - wget
   - curl
   - jq
@@ -11,12 +9,6 @@ homebrew_packages:
   - ruby-build
   - python
   - go
-  - hg
-  - awscli
-  - docker-machine
-  - nkf
-  - libjpeg
-  - libpng
   - libxml2
   - openssl
 
@@ -26,4 +18,3 @@ homebrew_cask_packages:
   - visual-studio-code
   - google-chrome
   - google-japanese-ime
-  
