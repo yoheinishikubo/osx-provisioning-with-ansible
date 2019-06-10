@@ -13,6 +13,7 @@ homebrew_packages:
   - openssl
 
 homebrew_cask_packages:
+  - docker
   - java
   - android-studio
   - visual-studio-code
