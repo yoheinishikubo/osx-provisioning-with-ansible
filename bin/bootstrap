@@ -113,6 +113,7 @@ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
 source ~/.bash_profile
 nodebrew install-binary stable
 nodebrew use stable
+brew install yarn
 exec -l $SHELL
 echo -e "\n\n"
 
