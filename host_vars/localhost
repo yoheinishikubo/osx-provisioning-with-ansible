@@ -1,21 +1,21 @@
 ---
 homebrew_packages:
-  - git
-  - wget
-  - curl
-  - jq
-  - sqlite
-  - rbenv
-  - ruby-build
-  - python
-  - go
-  - libxml2
-  - openssl
+  - "git"
+  - "wget"
+  - "curl"
+  - "jq"
+  - "sqlite"
+  - "rbenv"
+  - "ruby-build"
+  - "python"
+  - "go"
+  - "libxml2"
+  - "openssl"
 
 homebrew_cask_packages:
-  - docker
-  - java
-  - android-studio
-  - visual-studio-code
-  - google-chrome
-  - google-japanese-ime
+  - "docker"
+  - "java"
+  - "android-studio"
+  - "visual-studio-code"
+  - "google-chrome"
+  - "google-japanese-ime"
