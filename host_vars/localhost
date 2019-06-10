@@ -1,6 +1,5 @@
 ---
 homebrew_packages:
-  - "yarn"
   - "git"
   - "wget"
   - "curl"
